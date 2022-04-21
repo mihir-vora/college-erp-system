@@ -1,0 +1,29 @@
+  <!-- Sidebar -->
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <a
+          href="{% url 'index' %}"
+          class="list-group-item list-group-item-action py-2 ripple"
+          aria-current="true"
+        >
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Home</span>
+        </a>
+        <a href="{% url 'attendance' request.user.student.USN %}" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-chart-bar fa-fw me-3"></i><span>Attendance</span></a
+        >
+
+        <a href="{% url 'marks_list' request.user.student.USN %}" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-globe fa-fw me-3"></i><span>Marks</span></a
+        >
+
+        <a href="{% url 'timetable' request.user.student.class_id_id %}" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-building fa-fw me-3"></i><span>Time Table</span></a
+        >
+
+        <!-- <a href="" class="list-group-item list-group-item-action py-2 ripple"
+          ><i class="fas fa-calendar fa-fw me-3"></i><span>Reports</span></a> -->
+
+      </div>
+    </div>
+    </nav>

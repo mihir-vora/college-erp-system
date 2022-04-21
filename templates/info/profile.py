@@ -1,0 +1,5 @@
+{% extends 'info/base.html' %}
+
+{% block content %}
+    
+{% endblock %}
